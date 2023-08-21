@@ -1,4 +1,18 @@
 .page {
-  max-width: 1444px;
+  width: 100%;
+  min-height: calc(100vh - var(--page-toolbar-height));
   margin: auto;
+  background-color: white;
+
+  &.page-flex {
+    display: flex;
+  }
+
+  &.page-grid {
+    display: grid;
+  }
+}
+
+mat-toolbar {
+  height: var(--page-toolbar-height) !important;
 }

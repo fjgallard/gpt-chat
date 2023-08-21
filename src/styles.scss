@@ -4,3 +4,5 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 @import url(./styles/_normalize.scss);
+@import url(./styles/_variables.scss);
+@import url(./styles/_general.scss);
