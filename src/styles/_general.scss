@@ -1,8 +1,11 @@
 .page {
   width: 100%;
-  min-height: calc(100vh - var(--page-toolbar-height));
   margin: auto;
   background-color: white;
+
+  .page-col {
+    min-height: calc(100vh - 3rem - var(--page-toolbar-height));
+  }
 
   &.page-flex {
     display: flex;
@@ -10,6 +13,18 @@
 
   &.page-grid {
     display: grid;
+  }
+
+  &.xsmall-view, &.small-view {
+    flex-flow: column;
+
+    .page-col .content {
+      height: calc(100vh - 3rem - var(--page-toolbar-height));
+    }
+  }
+
+  &.medium-view, &.large-view, &.xlarge-view {
+    flex-flow: row;
   }
 }
 

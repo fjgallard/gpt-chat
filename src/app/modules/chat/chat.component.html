@@ -1,4 +1,12 @@
-<div class="page page-flex">
+<div
+class="page page-flex"
+[ngClass]="{
+  'xsmall-view': (isXSmall$ | async),
+  'small-view': (isSmall$ | async),
+  'medium-view': (isMedium$ | async),
+  'large-view': (isLarge$ | async),
+  'xlarge-view': (isXLarge$ | async)
+}">
   <div class="page-col" id="chat-history">
     <chat-history></chat-history>
   </div>
