@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius-default);
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem;
+
+  .logo-gutter {
+    margin-right: 1rem;
+  }
+
+  .response-container-content {
+    font-size: 18px;
+  }
+}
