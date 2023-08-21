@@ -7,9 +7,11 @@ export interface Prompt {
 /**
  * A prompt with an answer
  */
-export interface Chat {
+export interface Conversation {
   id: string;
-  promptId: string;
-  answer?: string;
+  promptId?: string;
+  promptValue: string;
+  modelResponseId?: string
+  modelResponse?: string;
   userId?: string;
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BreakpointsService } from 'src/app/core/services/breakpoints/breakpoints.service';
+import { Conversation } from './interfaces/conversation.model';
 
 @Component({
   selector: 'app-chat',
@@ -13,6 +14,8 @@ export class ChatComponent {
   isMedium$ = this.breakpointsService.isMedium$;
   isLarge$ = this.breakpointsService.isLarge$;
   isXLarge$ = this.breakpointsService.isXLarge$;
+
+  conversations: Conversation[] = [];
 
   constructor(private breakpointsService: BreakpointsService) {}
 }
