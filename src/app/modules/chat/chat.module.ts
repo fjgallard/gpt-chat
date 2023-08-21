@@ -5,6 +5,9 @@ import { ChatRoutingModule } from './chat-routing.module';
 import { ChatComponent } from './chat.component';
 import { HistoryComponent } from './components/history/history.component';
 import { ConversationComponent } from './components/conversation/conversation.component';
+import { ModelResponseComponent } from './components/model-response/model-response.component';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { UserQueryComponent } from './components/user-query/user-query.component';
 
 
 @NgModule({
@@ -12,10 +15,13 @@ import { ConversationComponent } from './components/conversation/conversation.co
     ChatComponent,
     HistoryComponent,
     ConversationComponent,
+    ModelResponseComponent,
+    UserQueryComponent,
   ],
   imports: [
     CommonModule,
-    ChatRoutingModule
+    ChatRoutingModule,
+    SharedModule,
   ]
 })
 export class ChatModule { }
